@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/88d6221bec.js" crossorigin="anonymous"></script>
+        <title>Versatile Design</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="{% static 'images/logo_vd_1.png' %}" alt="logo_versatile"></a>
+        </div>
+        <div class="texte-a-cote">
+            <p>Versatile Design</p>
+        </div>
+        <ul class="menu">
+            <li class="bouton"><a href="#">Accueil</a></li>
+            <li class="bouton"><a href="#tarifs">Tarifs</a></li>
+            <li class="bouton"><a href="{% url 'contact' %}">Contact</a></li>
+            <li class="bouton"><a href="{% url 'signup' %}">S'inscrire</a></li>
+            <li class="bouton"><a href="#connect">Se connecter</a></li>
+        </ul>
+    </nav>
+    <section id="apropos">
+        <div class="container">
+            <h2>Parce que tout le monde mérite d'être vu</h2>
+            <div class="glass-effect">
+            <!-- <p>"Versatile Design, car nous croyons que chacun mérite
+                d'être remarqué. Nous sommes une agence de création de
+                sites web passionnée par la réalisation de vos idées.
+                Grâce à notre expertise en design, développement et
+                stratégie, nous concevons des sites web élégants,
+                des boutiques en ligne performantes et des
+                applications innovantes. Notre équipe dévouée
+                se met à votre service en adoptant une approche
+                axée sur vos besoins spécifiques. Notre objectif
+                est de vous offrir une présence en ligne distinctive
+                dans un monde numérique en constante évolution.
+                Rejoignez-nous chez Versatile Design pour
+                donner vie à votre vision en ligne."</p> -->
+            <p>Chez Versatile Design, nous croyons en la puissance de la visibilité. Notre mission est de mettre en lumière votre présence en ligne d'une manière qui ne passe pas inaperçue. Que vous soyez une entreprise en pleine croissance, un entrepreneur passionné ou une organisation à but non lucratif dévouée, nous sommes là pour vous aider à briller.</p>
+            </div>
+            <div class="class glass-effect">
+                <p>Notre équipe dévouée combine l'art du design, la maîtrise du développement et une stratégie perspicace pour créer des sites web et des applications qui captivent et engagent votre public. Nous ne nous contentons pas de suivre les tendances, nous les créons.</p>
+            </div>
+            <div class="class glass-effect">
+                <p>Laissez-nous vous guider à travers le monde numérique en constante évolution. Rejoignez-nous chez Versatile Design pour donner vie à votre vision en ligne. Parce que votre histoire mérite d'être racontée, et votre succès mérite d'être célébré.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="ligne-droite"></div>
+
+    <section id="tarifs">
+        <div class="cont-tarif">
+        <h2>Trouvez le plan qui correspond le mieux à vos besoins.</h2>
+        <p>Que vous soyez à la recherche de fonctionnalités de base ou d'options premium, nous avons des solutions pour vous aider à réussir en ligne.</p>
+        </div>
+        <div class="affiche-container">
+        <div class="affiche" id="freemium">
+            <h3>BASIQUE</h3>
+            <p id="details">Idéal pour les utilisateurs cherchant des fonctionnalités essentielles pour leurs projets en ligne.</p>
+            <p id="option">Options incluses:</p>
+            <ul>
+                <li>Accès limité à certaines fonctionnalités.</li>
+                <li>Support de base par e-mail.</li>
+                <li>Publicités affichées</li>
+            </ul>
+            <p class="price">€<span class="large-price">9.99</span>/mo</p>
+            <!-- <p class="duration">Facturation mensuelle</p> -->
+            <a href="#" class="cta-button">Inscrivez-vous</a>
+        </div>
+        <div class="affiche" id="premium">
+            <h3>AVANCÉ</h3>
+            <p id="details">Pour des fonctionnalités premium et un support 24/7.</p>
+            <p id="option">Options BASIQUE, plus:</p>
+            <ul>
+                <li>Accès complet à toutes les fonctionnalités.</li>
+                <li>Support prioritaire 24/7.</li>
+                <li>Pas de publicités.</li>
+                <li>Accès à des thèmes premium.</li>
+            </ul>
+            <p class="price">€<span class="large-price">19.99</span>/mo</p>
+            <!-- <p class="duration">Facturation mensuelle</p> -->
+            <a href="#" class="cta-button">Inscrivez-vous</a>
+        </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2023 Versatile Design
+            </div>
+            <div class="contact-info">
+                <p>Adresse : 123 Rue de la Réussite, Ville</p>
+                <p>Téléphone : +33 123 456 789</p>
+                <p>Email : contact@versatiledesign.com</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
